@@ -25,8 +25,8 @@ packageJSON.exports = {
 }
 
 for (const api of apis) {
-  fs.writeFile(`${api}.mjs`, `import { ${api} } from 'vue-demi'\nglobal.${api} = ${api}\n`, 'utf-8')
-  fs.writeFile(`${api}.cjs`, `const { ${api} } = require('vue-demi')\nglobal.${api} = ${api}\n`, 'utf-8')
+  fs.writeFile(`${api}.mjs`, `import { ${api} } from 'vue-demi'\nglobalThis.${api} = ${api}\n`, 'utf-8')
+  fs.writeFile(`${api}.cjs`, `const { ${api} } = require('vue-demi')\nglobalThis.${api} = ${api}\n`, 'utf-8')
   fs.writeFile(`${api}.d.ts`, `import { ${api} as _${api} } from 'vue-demi'\ndeclare global {\n  const ${api}: typeof _${api}\n}\n`, 'utf-8')
   packageJSON.exports[`./${api}`] = {
     import: `./${api}.mjs`,
