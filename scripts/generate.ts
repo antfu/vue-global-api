@@ -2,8 +2,11 @@ import fs from 'fs-extra'
 
 const apis = [
   'ref',
-  'computed',
+  'unref',
+  'shallowRef',
   'reactive',
+  'shallowReactive',
+  'computed',
   'watch',
   'watchEffect',
   'getCurrentInstance',
