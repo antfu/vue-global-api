@@ -1,0 +1,98 @@
+{
+  "name": "vue-global-api",
+  "version": "0.0.0",
+  "description": "Use Vue Composition API globally",
+  "homepage": "https://github.com/antfu/vue-global-api",
+  "bugs": "https://github.com/antfu/vue-global-api/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antfu/vue-global-api"
+  },
+  "funding": "https://github.com/sponsors/antfu",
+  "author": "antfu <anthonyfu117@hotmail.com>",
+  "files": [
+    "*.cjs.js",
+    "*.esm.js",
+    "*.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.esm.js",
+      "require": "./index.cjs.js"
+    },
+    "./ref": {
+      "import": "./ref.esm.js",
+      "require": "./ref.cjs.js"
+    },
+    "./computed": {
+      "import": "./computed.esm.js",
+      "require": "./computed.cjs.js"
+    },
+    "./reactive": {
+      "import": "./reactive.esm.js",
+      "require": "./reactive.cjs.js"
+    },
+    "./watch": {
+      "import": "./watch.esm.js",
+      "require": "./watch.cjs.js"
+    },
+    "./watchEffect": {
+      "import": "./watchEffect.esm.js",
+      "require": "./watchEffect.cjs.js"
+    },
+    "./getCurrentInstance": {
+      "import": "./getCurrentInstance.esm.js",
+      "require": "./getCurrentInstance.cjs.js"
+    },
+    "./inject": {
+      "import": "./inject.esm.js",
+      "require": "./inject.cjs.js"
+    },
+    "./provide": {
+      "import": "./provide.esm.js",
+      "require": "./provide.cjs.js"
+    },
+    "./defineComponent": {
+      "import": "./defineComponent.esm.js",
+      "require": "./defineComponent.cjs.js"
+    },
+    "./nextTick": {
+      "import": "./nextTick.esm.js",
+      "require": "./nextTick.cjs.js"
+    },
+    "./onMounted": {
+      "import": "./onMounted.esm.js",
+      "require": "./onMounted.cjs.js"
+    },
+    "./onUnmounted": {
+      "import": "./onUnmounted.esm.js",
+      "require": "./onUnmounted.cjs.js"
+    }
+  },
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "esno scripts/generate.ts",
+    "prepublishOnly": "npm run build",
+    "release": "npx bumpp --commit --tag --push && npm publish"
+  },
+  "dependencies": {
+    "vue-demi": "latest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.6.6",
+    "@antfu/utils": "^0.2.4",
+    "@types/fs-extra": "^9.0.12",
+    "@types/node": "^15.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "eslint": "^7.29.0",
+    "esno": "^0.7.3",
+    "fs-extra": "^10.0.0",
+    "rollup": "^2.52.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5",
+    "vue": "^3.1.4"
+  }
+}
