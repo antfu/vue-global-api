@@ -25,13 +25,25 @@
       "import": "./ref.mjs",
       "require": "./ref.cjs"
     },
-    "./computed": {
-      "import": "./computed.mjs",
-      "require": "./computed.cjs"
+    "./unref": {
+      "import": "./unref.mjs",
+      "require": "./unref.cjs"
+    },
+    "./shallowRef": {
+      "import": "./shallowRef.mjs",
+      "require": "./shallowRef.cjs"
     },
     "./reactive": {
       "import": "./reactive.mjs",
       "require": "./reactive.cjs"
+    },
+    "./shallowReactive": {
+      "import": "./shallowReactive.mjs",
+      "require": "./shallowReactive.cjs"
+    },
+    "./computed": {
+      "import": "./computed.mjs",
+      "require": "./computed.cjs"
     },
     "./watch": {
       "import": "./watch.mjs",
