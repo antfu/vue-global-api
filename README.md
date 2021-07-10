@@ -60,6 +60,10 @@ import 'vue-global-api/ref'
 import 'vue-global-api/computed'
 ```
 
+## Motivation
+
+In the latest `<script setup>`, compile time macros like `defineProps` and `defineEmits` are now available globally without the need to import them from `vue`. So, as your components are likely to rely on composition APIs like `ref` and `computed`, why don't we just have them available globally as well?
+
 ## License
 
 MIT License © 2021 [Anthony Fu](https://github.com/antfu)
