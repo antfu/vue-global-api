@@ -1,6 +1,6 @@
 {
   "name": "vue-global-api",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.3",
   "description": "Use Vue Composition API globally",
   "homepage": "https://github.com/antfu/vue-global-api",
   "bugs": "https://github.com/antfu/vue-global-api/issues",
