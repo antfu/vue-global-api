@@ -65,9 +65,17 @@
       "import": "./provide.mjs",
       "require": "./provide.cjs"
     },
+    "./h": {
+      "import": "./h.mjs",
+      "require": "./h.cjs"
+    },
     "./defineComponent": {
       "import": "./defineComponent.mjs",
       "require": "./defineComponent.cjs"
+    },
+    "./useCssModule": {
+      "import": "./useCssModule.mjs",
+      "require": "./useCssModule.cjs"
     },
     "./nextTick": {
       "import": "./nextTick.mjs",
