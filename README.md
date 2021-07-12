@@ -11,7 +11,8 @@ Use Vue Composition API globally
 
 Instead of import APIs from `vue` in every file,
 
-```ts
+```html
+<script setup>
 import { ref, computed, watch } from 'vue'
 
 const counter = ref(0)
@@ -21,11 +22,13 @@ const doubled = computed(() => counter.value * 2)
 watch(doubled, (v) => {
   console.log('New value: ' + v)
 })
+</script>
 ```
 
 Now you can directly use them everywhere (with TypeScript support!)
 
-```ts
+```html
+<script setup>
 const counter = ref(0)
 
 const doubled = computed(() => counter.value * 2)
@@ -33,6 +36,7 @@ const doubled = computed(() => counter.value * 2)
 watch(doubled, (v) => {
   console.log('New value: ' + v)
 })
+</script>
 ```
 
 ## Installation
@@ -58,6 +62,14 @@ By default, importing `vue-global-api` will register [common composition apis](h
 // only register `ref` and `computed` as global APIs
 import 'vue-global-api/ref'
 import 'vue-global-api/computed'
+```
+
+## CDN Usage
+
+If you want to have global api work in CDN, you don't actually need this package. All you need to do is:
+
+```ts
+Object.assign(window, Vue)
 ```
 
 ## Motivation
