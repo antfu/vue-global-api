@@ -37,6 +37,14 @@
       "import": "./unref.mjs",
       "require": "./unref.cjs"
     },
+    "./isRef": {
+      "import": "./isRef.mjs",
+      "require": "./isRef.cjs"
+    },
+    "./toRef": {
+      "import": "./toRef.mjs",
+      "require": "./toRef.cjs"
+    },
     "./shallowRef": {
       "import": "./shallowRef.mjs",
       "require": "./shallowRef.cjs"
@@ -73,9 +81,17 @@
       "import": "./provide.mjs",
       "require": "./provide.cjs"
     },
+    "./h": {
+      "import": "./h.mjs",
+      "require": "./h.cjs"
+    },
     "./defineComponent": {
       "import": "./defineComponent.mjs",
       "require": "./defineComponent.cjs"
+    },
+    "./useCssModule": {
+      "import": "./useCssModule.mjs",
+      "require": "./useCssModule.cjs"
     },
     "./nextTick": {
       "import": "./nextTick.mjs",
