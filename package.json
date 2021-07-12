@@ -25,6 +25,10 @@
       "import": "./computed.mjs",
       "require": "./computed.cjs"
     },
+    "./customRef": {
+      "import": "./customRef.mjs",
+      "require": "./customRef.cjs"
+    },
     "./defineComponent": {
       "import": "./defineComponent.mjs",
       "require": "./defineComponent.cjs"
@@ -44,6 +48,10 @@
     "./isRef": {
       "import": "./isRef.mjs",
       "require": "./isRef.cjs"
+    },
+    "./isReadonly": {
+      "import": "./isReadonly.mjs",
+      "require": "./isReadonly.cjs"
     },
     "./nextTick": {
       "import": "./nextTick.mjs",
@@ -69,6 +77,10 @@
       "import": "./ref.mjs",
       "require": "./ref.cjs"
     },
+    "./readonly": {
+      "import": "./readonly.mjs",
+      "require": "./readonly.cjs"
+    },
     "./shallowReactive": {
       "import": "./shallowReactive.mjs",
       "require": "./shallowReactive.cjs"
@@ -76,6 +88,10 @@
     "./shallowRef": {
       "import": "./shallowRef.mjs",
       "require": "./shallowRef.cjs"
+    },
+    "./shallowReadonly": {
+      "import": "./shallowReadonly.mjs",
+      "require": "./shallowReadonly.cjs"
     },
     "./toRaw": {
       "import": "./toRaw.mjs",
@@ -88,6 +104,10 @@
     "./toRefs": {
       "import": "./toRefs.mjs",
       "require": "./toRefs.cjs"
+    },
+    "./triggerRef": {
+      "import": "./triggerRef.mjs",
+      "require": "./triggerRef.cjs"
     },
     "./unref": {
       "import": "./unref.mjs",
