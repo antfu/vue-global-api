@@ -33,6 +33,10 @@
       "import": "./isRef.mjs",
       "require": "./isRef.cjs"
     },
+    "./toRef": {
+      "import": "./toRef.mjs",
+      "require": "./toRef.cjs"
+    },
     "./shallowRef": {
       "import": "./shallowRef.mjs",
       "require": "./shallowRef.cjs"

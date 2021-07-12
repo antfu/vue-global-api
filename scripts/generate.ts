@@ -4,6 +4,7 @@ const apis = [
   'ref',
   'unref',
   'isRef',
+  'toRef',
   'shallowRef',
   'reactive',
   'shallowReactive',
