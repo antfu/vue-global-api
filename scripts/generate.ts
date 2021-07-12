@@ -9,6 +9,7 @@ const apis = [
   'inject',
   'isRef',
   'isReadonly',
+  'markRaw',
   'nextTick',
   'onMounted',
   'onUnmounted',

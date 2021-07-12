@@ -53,6 +53,10 @@
       "import": "./isReadonly.mjs",
       "require": "./isReadonly.cjs"
     },
+    "./markRaw": {
+      "import": "./markRaw.mjs",
+      "require": "./markRaw.cjs"
+    },
     "./nextTick": {
       "import": "./nextTick.mjs",
       "require": "./nextTick.cjs"
