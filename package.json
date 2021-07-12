@@ -1,6 +1,6 @@
 {
   "name": "vue-global-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Use Vue Composition API globally",
   "homepage": "https://github.com/antfu/vue-global-api",
   "bugs": "https://github.com/antfu/vue-global-api/issues",
@@ -21,77 +21,29 @@
       "import": "./index.mjs",
       "require": "./index.cjs"
     },
-    "./ref": {
-      "import": "./ref.mjs",
-      "require": "./ref.cjs"
-    },
-    "./toRaw": {
-      "import": "./toRaw.mjs",
-      "require": "./toRaw.cjs"
-    },
-    "./toRefs": {
-      "import": "./toRefs.mjs",
-      "require": "./toRefs.cjs"
-    },
-    "./unref": {
-      "import": "./unref.mjs",
-      "require": "./unref.cjs"
-    },
-    "./isRef": {
-      "import": "./isRef.mjs",
-      "require": "./isRef.cjs"
-    },
-    "./toRef": {
-      "import": "./toRef.mjs",
-      "require": "./toRef.cjs"
-    },
-    "./shallowRef": {
-      "import": "./shallowRef.mjs",
-      "require": "./shallowRef.cjs"
-    },
-    "./reactive": {
-      "import": "./reactive.mjs",
-      "require": "./reactive.cjs"
-    },
-    "./shallowReactive": {
-      "import": "./shallowReactive.mjs",
-      "require": "./shallowReactive.cjs"
-    },
     "./computed": {
       "import": "./computed.mjs",
       "require": "./computed.cjs"
-    },
-    "./watch": {
-      "import": "./watch.mjs",
-      "require": "./watch.cjs"
-    },
-    "./watchEffect": {
-      "import": "./watchEffect.mjs",
-      "require": "./watchEffect.cjs"
-    },
-    "./getCurrentInstance": {
-      "import": "./getCurrentInstance.mjs",
-      "require": "./getCurrentInstance.cjs"
-    },
-    "./inject": {
-      "import": "./inject.mjs",
-      "require": "./inject.cjs"
-    },
-    "./provide": {
-      "import": "./provide.mjs",
-      "require": "./provide.cjs"
-    },
-    "./h": {
-      "import": "./h.mjs",
-      "require": "./h.cjs"
     },
     "./defineComponent": {
       "import": "./defineComponent.mjs",
       "require": "./defineComponent.cjs"
     },
-    "./useCssModule": {
-      "import": "./useCssModule.mjs",
-      "require": "./useCssModule.cjs"
+    "./getCurrentInstance": {
+      "import": "./getCurrentInstance.mjs",
+      "require": "./getCurrentInstance.cjs"
+    },
+    "./h": {
+      "import": "./h.mjs",
+      "require": "./h.cjs"
+    },
+    "./inject": {
+      "import": "./inject.mjs",
+      "require": "./inject.cjs"
+    },
+    "./isRef": {
+      "import": "./isRef.mjs",
+      "require": "./isRef.cjs"
     },
     "./nextTick": {
       "import": "./nextTick.mjs",
@@ -104,6 +56,54 @@
     "./onUnmounted": {
       "import": "./onUnmounted.mjs",
       "require": "./onUnmounted.cjs"
+    },
+    "./provide": {
+      "import": "./provide.mjs",
+      "require": "./provide.cjs"
+    },
+    "./reactive": {
+      "import": "./reactive.mjs",
+      "require": "./reactive.cjs"
+    },
+    "./ref": {
+      "import": "./ref.mjs",
+      "require": "./ref.cjs"
+    },
+    "./shallowReactive": {
+      "import": "./shallowReactive.mjs",
+      "require": "./shallowReactive.cjs"
+    },
+    "./shallowRef": {
+      "import": "./shallowRef.mjs",
+      "require": "./shallowRef.cjs"
+    },
+    "./toRaw": {
+      "import": "./toRaw.mjs",
+      "require": "./toRaw.cjs"
+    },
+    "./toRef": {
+      "import": "./toRef.mjs",
+      "require": "./toRef.cjs"
+    },
+    "./toRefs": {
+      "import": "./toRefs.mjs",
+      "require": "./toRefs.cjs"
+    },
+    "./unref": {
+      "import": "./unref.mjs",
+      "require": "./unref.cjs"
+    },
+    "./useCssModule": {
+      "import": "./useCssModule.mjs",
+      "require": "./useCssModule.cjs"
+    },
+    "./watch": {
+      "import": "./watch.mjs",
+      "require": "./watch.cjs"
+    },
+    "./watchEffect": {
+      "import": "./watchEffect.mjs",
+      "require": "./watchEffect.cjs"
     }
   },
   "main": "./index.cjs",
