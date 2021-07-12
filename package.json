@@ -29,6 +29,10 @@
       "import": "./unref.mjs",
       "require": "./unref.cjs"
     },
+    "./isRef": {
+      "import": "./isRef.mjs",
+      "require": "./isRef.cjs"
+    },
     "./shallowRef": {
       "import": "./shallowRef.mjs",
       "require": "./shallowRef.cjs"

@@ -3,6 +3,7 @@ import fs from 'fs-extra'
 const apis = [
   'ref',
   'unref',
+  'isRef',
   'shallowRef',
   'reactive',
   'shallowReactive',
