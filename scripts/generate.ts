@@ -2,6 +2,8 @@ import fs from 'fs-extra'
 
 const apis = [
   'ref',
+  'toRaw',
+  'toRefs',
   'unref',
   'shallowRef',
   'reactive',

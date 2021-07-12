@@ -25,6 +25,14 @@
       "import": "./ref.mjs",
       "require": "./ref.cjs"
     },
+    "./toRaw": {
+      "import": "./toRaw.mjs",
+      "require": "./toRaw.cjs"
+    },
+    "./toRefs": {
+      "import": "./toRefs.mjs",
+      "require": "./toRefs.cjs"
+    },
     "./unref": {
       "import": "./unref.mjs",
       "require": "./unref.cjs"
