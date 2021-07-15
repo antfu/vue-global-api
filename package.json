@@ -61,13 +61,45 @@
       "import": "./nextTick.mjs",
       "require": "./nextTick.cjs"
     },
+    "./onBeforeMount": {
+      "import": "./onBeforeMount.mjs",
+      "require": "./onBeforeMount.cjs"
+    },
     "./onMounted": {
       "import": "./onMounted.mjs",
       "require": "./onMounted.cjs"
     },
+    "./onBeforeUpdate": {
+      "import": "./onBeforeUpdate.mjs",
+      "require": "./onBeforeUpdate.cjs"
+    },
+    "./onUpdated": {
+      "import": "./onUpdated.mjs",
+      "require": "./onUpdated.cjs"
+    },
+    "./onBeforeUnmount": {
+      "import": "./onBeforeUnmount.mjs",
+      "require": "./onBeforeUnmount.cjs"
+    },
     "./onUnmounted": {
       "import": "./onUnmounted.mjs",
       "require": "./onUnmounted.cjs"
+    },
+    "./onErrorCaptured": {
+      "import": "./onErrorCaptured.mjs",
+      "require": "./onErrorCaptured.cjs"
+    },
+    "./onActivated": {
+      "import": "./onActivated.mjs",
+      "require": "./onActivated.cjs"
+    },
+    "./onDeactivated": {
+      "import": "./onDeactivated.mjs",
+      "require": "./onDeactivated.cjs"
+    },
+    "./onServerPrefetch": {
+      "import": "./onServerPrefetch.mjs",
+      "require": "./onServerPrefetch.cjs"
     },
     "./provide": {
       "import": "./provide.mjs",
