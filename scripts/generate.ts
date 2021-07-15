@@ -74,7 +74,12 @@ for (const api of apis) {
 for (const [name, collection] of Object.entries(collections)) {
   fs.writeFile(`${name}.mjs`, collection.map(api => `import './${api}.mjs'`).join('\n'), 'utf-8')
   fs.writeFile(`${name}.cjs`, collection.map(api => `require('./${api}.cjs')`).join('\n'), 'utf-8')
-  fs.writeFile(`${name}.d.ts`, collection.map(api => `import './${api}'`).join('\n'), 'utf-8')
+  fs.writeFile(`${name}.d.ts`, `
+import { ${collection.map(api => `${api} as _${api}`).join(', ')} } from 'vue-demi'
+declare global {
+${collection.map(api => `  const ${api}: typeof _${api}`).join('\n')}
+}
+`, 'utf-8')
 
   let entry = `./${name}`
   if (name === 'index')
