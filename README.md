@@ -56,7 +56,7 @@ And enjoy :)
 
 ## Customization
 
-By default, importing `vue-global-api` will register [all common composition apis](https://github.com/antfu/vue-global-api/blob/main/scripts/generate.ts) to the global object. If you want to have fine-grain control, use submodule per api:
+By default, importing `vue-global-api` will register [all common composition apis](https://github.com/antfu/vue-global-api/blob/main/scripts/generate.ts) to the global object. If you want to have fine-grain control, use submodule per API:
 
 ```ts
 // only register `ref` and `computed` as global APIs
