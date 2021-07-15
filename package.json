@@ -133,6 +133,10 @@
       "import": "./defineComponent.mjs",
       "require": "./defineComponent.cjs"
     },
+    "./defineAsyncComponent": {
+      "import": "./defineAsyncComponent.mjs",
+      "require": "./defineAsyncComponent.cjs"
+    },
     "./getCurrentInstance": {
       "import": "./getCurrentInstance.mjs",
       "require": "./getCurrentInstance.cjs"

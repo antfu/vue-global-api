@@ -36,6 +36,7 @@ const reactivity = [
 
 const component = [
   'defineComponent',
+  'defineAsyncComponent',
   'getCurrentInstance',
   'h',
   'inject',
