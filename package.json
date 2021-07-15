@@ -156,6 +156,22 @@
     "./useCssModule": {
       "import": "./useCssModule.mjs",
       "require": "./useCssModule.cjs"
+    },
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./lifecycle": {
+      "import": "./lifecycle.mjs",
+      "require": "./lifecycle.cjs"
+    },
+    "./component": {
+      "import": "./component.mjs",
+      "require": "./component.cjs"
+    },
+    "./reactivity": {
+      "import": "./reactivity.mjs",
+      "require": "./reactivity.cjs"
     }
   },
   "main": "./index.cjs",
@@ -182,29 +198,5 @@
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.5",
     "vue": "^3.1.4"
-  },
-  ".": {
-    "import": "./index.mjs",
-    "require": "./index.cjs"
-  },
-  "./lifecycles": {
-    "import": "./lifecycles.mjs",
-    "require": "./lifecycles.cjs"
-  },
-  "./misc": {
-    "import": "./misc.mjs",
-    "require": "./misc.cjs"
-  },
-  "./reactivity": {
-    "import": "./reactivity.mjs",
-    "require": "./reactivity.cjs"
-  },
-  "./lifecycle": {
-    "import": "./lifecycle.mjs",
-    "require": "./lifecycle.cjs"
-  },
-  "./component": {
-    "import": "./component.mjs",
-    "require": "./component.cjs"
   }
 }

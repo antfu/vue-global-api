@@ -79,7 +79,7 @@ for (const [name, collection] of Object.entries(collections)) {
   if (name === 'index')
     entry = '.'
 
-  packageJSON[entry] = {
+  packageJSON.exports[entry] = {
     import: `./${name}.mjs`,
     require: `./${name}.cjs`,
   }
