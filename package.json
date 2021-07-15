@@ -17,9 +17,45 @@
     "*.d.ts"
   ],
   "exports": {
-    ".": {
-      "import": "./index.mjs",
-      "require": "./index.cjs"
+    "./onActivated": {
+      "import": "./onActivated.mjs",
+      "require": "./onActivated.cjs"
+    },
+    "./onBeforeMount": {
+      "import": "./onBeforeMount.mjs",
+      "require": "./onBeforeMount.cjs"
+    },
+    "./onBeforeUnmount": {
+      "import": "./onBeforeUnmount.mjs",
+      "require": "./onBeforeUnmount.cjs"
+    },
+    "./onBeforeUpdate": {
+      "import": "./onBeforeUpdate.mjs",
+      "require": "./onBeforeUpdate.cjs"
+    },
+    "./onDeactivated": {
+      "import": "./onDeactivated.mjs",
+      "require": "./onDeactivated.cjs"
+    },
+    "./onErrorCaptured": {
+      "import": "./onErrorCaptured.mjs",
+      "require": "./onErrorCaptured.cjs"
+    },
+    "./onMounted": {
+      "import": "./onMounted.mjs",
+      "require": "./onMounted.cjs"
+    },
+    "./onServerPrefetch": {
+      "import": "./onServerPrefetch.mjs",
+      "require": "./onServerPrefetch.cjs"
+    },
+    "./onUnmounted": {
+      "import": "./onUnmounted.mjs",
+      "require": "./onUnmounted.cjs"
+    },
+    "./onUpdated": {
+      "import": "./onUpdated.mjs",
+      "require": "./onUpdated.cjs"
     },
     "./computed": {
       "import": "./computed.mjs",
@@ -29,105 +65,41 @@
       "import": "./customRef.mjs",
       "require": "./customRef.cjs"
     },
-    "./defineComponent": {
-      "import": "./defineComponent.mjs",
-      "require": "./defineComponent.cjs"
-    },
-    "./getCurrentInstance": {
-      "import": "./getCurrentInstance.mjs",
-      "require": "./getCurrentInstance.cjs"
-    },
-    "./h": {
-      "import": "./h.mjs",
-      "require": "./h.cjs"
-    },
-    "./inject": {
-      "import": "./inject.mjs",
-      "require": "./inject.cjs"
+    "./isReadonly": {
+      "import": "./isReadonly.mjs",
+      "require": "./isReadonly.cjs"
     },
     "./isRef": {
       "import": "./isRef.mjs",
       "require": "./isRef.cjs"
     },
-    "./isReadonly": {
-      "import": "./isReadonly.mjs",
-      "require": "./isReadonly.cjs"
-    },
     "./markRaw": {
       "import": "./markRaw.mjs",
       "require": "./markRaw.cjs"
-    },
-    "./nextTick": {
-      "import": "./nextTick.mjs",
-      "require": "./nextTick.cjs"
-    },
-    "./onBeforeMount": {
-      "import": "./onBeforeMount.mjs",
-      "require": "./onBeforeMount.cjs"
-    },
-    "./onMounted": {
-      "import": "./onMounted.mjs",
-      "require": "./onMounted.cjs"
-    },
-    "./onBeforeUpdate": {
-      "import": "./onBeforeUpdate.mjs",
-      "require": "./onBeforeUpdate.cjs"
-    },
-    "./onUpdated": {
-      "import": "./onUpdated.mjs",
-      "require": "./onUpdated.cjs"
-    },
-    "./onBeforeUnmount": {
-      "import": "./onBeforeUnmount.mjs",
-      "require": "./onBeforeUnmount.cjs"
-    },
-    "./onUnmounted": {
-      "import": "./onUnmounted.mjs",
-      "require": "./onUnmounted.cjs"
-    },
-    "./onErrorCaptured": {
-      "import": "./onErrorCaptured.mjs",
-      "require": "./onErrorCaptured.cjs"
-    },
-    "./onActivated": {
-      "import": "./onActivated.mjs",
-      "require": "./onActivated.cjs"
-    },
-    "./onDeactivated": {
-      "import": "./onDeactivated.mjs",
-      "require": "./onDeactivated.cjs"
-    },
-    "./onServerPrefetch": {
-      "import": "./onServerPrefetch.mjs",
-      "require": "./onServerPrefetch.cjs"
-    },
-    "./provide": {
-      "import": "./provide.mjs",
-      "require": "./provide.cjs"
     },
     "./reactive": {
       "import": "./reactive.mjs",
       "require": "./reactive.cjs"
     },
-    "./ref": {
-      "import": "./ref.mjs",
-      "require": "./ref.cjs"
-    },
     "./readonly": {
       "import": "./readonly.mjs",
       "require": "./readonly.cjs"
+    },
+    "./ref": {
+      "import": "./ref.mjs",
+      "require": "./ref.cjs"
     },
     "./shallowReactive": {
       "import": "./shallowReactive.mjs",
       "require": "./shallowReactive.cjs"
     },
-    "./shallowRef": {
-      "import": "./shallowRef.mjs",
-      "require": "./shallowRef.cjs"
-    },
     "./shallowReadonly": {
       "import": "./shallowReadonly.mjs",
       "require": "./shallowReadonly.cjs"
+    },
+    "./shallowRef": {
+      "import": "./shallowRef.mjs",
+      "require": "./shallowRef.cjs"
     },
     "./toRaw": {
       "import": "./toRaw.mjs",
@@ -149,10 +121,6 @@
       "import": "./unref.mjs",
       "require": "./unref.cjs"
     },
-    "./useCssModule": {
-      "import": "./useCssModule.mjs",
-      "require": "./useCssModule.cjs"
-    },
     "./watch": {
       "import": "./watch.mjs",
       "require": "./watch.cjs"
@@ -160,6 +128,34 @@
     "./watchEffect": {
       "import": "./watchEffect.mjs",
       "require": "./watchEffect.cjs"
+    },
+    "./defineComponent": {
+      "import": "./defineComponent.mjs",
+      "require": "./defineComponent.cjs"
+    },
+    "./getCurrentInstance": {
+      "import": "./getCurrentInstance.mjs",
+      "require": "./getCurrentInstance.cjs"
+    },
+    "./h": {
+      "import": "./h.mjs",
+      "require": "./h.cjs"
+    },
+    "./inject": {
+      "import": "./inject.mjs",
+      "require": "./inject.cjs"
+    },
+    "./nextTick": {
+      "import": "./nextTick.mjs",
+      "require": "./nextTick.cjs"
+    },
+    "./provide": {
+      "import": "./provide.mjs",
+      "require": "./provide.cjs"
+    },
+    "./useCssModule": {
+      "import": "./useCssModule.mjs",
+      "require": "./useCssModule.cjs"
     }
   },
   "main": "./index.cjs",
@@ -186,5 +182,29 @@
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.5",
     "vue": "^3.1.4"
+  },
+  ".": {
+    "import": "./index.mjs",
+    "require": "./index.cjs"
+  },
+  "./lifecycles": {
+    "import": "./lifecycles.mjs",
+    "require": "./lifecycles.cjs"
+  },
+  "./misc": {
+    "import": "./misc.mjs",
+    "require": "./misc.cjs"
+  },
+  "./reactivity": {
+    "import": "./reactivity.mjs",
+    "require": "./reactivity.cjs"
+  },
+  "./lifecycle": {
+    "import": "./lifecycle.mjs",
+    "require": "./lifecycle.cjs"
+  },
+  "./component": {
+    "import": "./component.mjs",
+    "require": "./component.cjs"
   }
 }
