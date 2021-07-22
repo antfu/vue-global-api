@@ -89,6 +89,62 @@ Object.assign(window, Vue)
 
 In [the latest `<script setup>`](https://github.com/vuejs/rfcs/pull/227), compile time macros like `defineProps` and `defineEmits` are now available globally without the need to import them from `vue`. So, as your components are likely to rely on composition APIs like `ref` and `computed`, why don't we just have them available globally as well?
 
+## Eslint
+
+When `eslint` prompts `'ref' is not defined. eslint(no-undef)`，it is suggested to add the correspondint global declaration by modifying `.eslintrc.js`.
+
+```js
+module.exports = {
+  // ...
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
+
+    // lifecycle
+    onActivated: 'readonly',
+    onBeforeMount: 'readonly',
+    onBeforeUnmount: 'readonly',
+    onBeforeUpdate: 'readonly',
+    onDeactivated: 'readonly',
+    onErrorCaptured: 'readonly',
+    onMounted: 'readonly',
+    onServerPrefetch: 'readonly',
+    onUnmounted: 'readonly',
+    onUpdated: 'readonly',
+    // reactivity
+    computed: 'readonly',
+    customRef: 'readonly',
+    isReadonly: 'readonly',
+    isRef: 'readonly',
+    markRaw: 'readonly',
+    reactive: 'readonly',
+    readonly: 'readonly',
+    ref: 'readonly',
+    shallowReactive: 'readonly',
+    shallowReadonly: 'readonly',
+    shallowRef: 'readonly',
+    toRaw: 'readonly',
+    toRef: 'readonly',
+    toRefs: 'readonly',
+    triggerRef: 'readonly',
+    unref: 'readonly',
+    watch: 'readonly',
+    watchEffect: 'readonly',
+    // component
+    defineComponent: 'readonly',
+    defineAsyncComponent: 'readonly',
+    getCurrentInstance: 'readonly',
+    h: 'readonly',
+    inject: 'readonly',
+    nextTick: 'readonly',
+    provide: 'readonly',
+    useCssModule: 'readonly',
+  },
+};
+```
+
 ## License
 
 MIT License © 2021 [Anthony Fu](https://github.com/antfu)
