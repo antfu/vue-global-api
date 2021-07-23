@@ -45,7 +45,7 @@ watch(doubled, (v) => {
 npm i vue-global-api
 ```
 
-Then import `vue-global-api` in your main entry to register the global apis 
+Then import `vue-global-api` in your main entry to register the global apis **before any usages**
 
 ```ts
 // main.js
