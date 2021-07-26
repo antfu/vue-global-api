@@ -89,7 +89,7 @@ Object.assign(window, Vue)
 
 In [the latest `<script setup>`](https://github.com/vuejs/rfcs/pull/227), compile time macros like `defineProps` and `defineEmits` are now available globally without the need to import them from `vue`. So, as your components are likely to rely on composition APIs like `ref` and `computed`, why don't we just have them available globally as well?
 
-## Eslint
+## ESLint
 
 If you use ESLint it'll complain about you using undefined variables. This package provides a ESLint config you can extend from that will fix those issues.
 
