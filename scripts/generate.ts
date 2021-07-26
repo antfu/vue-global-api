@@ -58,7 +58,7 @@ const collections = {
   reactivity,
 }
 
-fs.ensureDir("./eslint-config/")
+fs.ensureDir('./eslint-config/')
 
 const eslintConfigIndex: {extends: string[]; globals: Record<string, 'readonly'>} = {
   extends: [],
@@ -70,13 +70,16 @@ const eslintConfigIndex: {extends: string[]; globals: Record<string, 'readonly'>
   },
 }
 const packageJSON = fs.readJSONSync('package.json')
-packageJSON.exports = {}
+packageJSON.exports = {
+  './eslint-config': './eslint-config/index.js',
+  './eslint-config/*': './eslint-config/*',
+}
 
 for (const api of apis) {
   fs.writeFile(`${api}.mjs`, `import { ${api} } from 'vue-demi'\nglobalThis.${api} = ${api}\n`, 'utf-8')
   fs.writeFile(`${api}.cjs`, `const { ${api} } = require('vue-demi')\nglobalThis.${api} = ${api}\n`, 'utf-8')
   fs.writeFile(`${api}.d.ts`, `import { ${api} as _${api} } from 'vue-demi'\ndeclare global {\n  const ${api}: typeof _${api}\n}\n`, 'utf-8')
-  fs.writeFile(`./eslint-config/${api}.js`, `module.exports = ${JSON.stringify({ globals: { api: 'readonly' } }, undefined, 2)}`, 'utf-8')
+  fs.writeFile(`./eslint-config/${api}.js`, `module.exports = {\n  globals: {\n    ${api}: 'readonly'\n  }\n}`, 'utf-8')
   packageJSON.exports[`./${api}`] = {
     import: `./${api}.mjs`,
     require: `./${api}.cjs`,
@@ -97,7 +100,7 @@ ${collection.map(api => `  const ${api}: typeof _${api}`).join('\n')}
   if (name === 'index') { entry = '.' }
   else {
     eslintConfigIndex.extends.push(`./${name}.js`)
-    fs.writeFile(`./eslint-config/${name}.js`, `module.exports = ${JSON.stringify({ globals: Object.fromEntries(collection.map(api => [api, 'readonly'])) }, undefined, 2)}`, 'utf-8')
+    fs.writeFile(`./eslint-config/${name}.js`, `module.exports = {\n  globals: {\n${collection.map(api => `    ${api}: 'readonly'`).join(',\n')}\n  }\n}`, 'utf-8')
   }
 
   packageJSON.exports[entry] = {

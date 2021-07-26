@@ -24,6 +24,8 @@
     "release": "npx bumpp --commit --tag --push && npm publish"
   },
   "exports": {
+    "./eslint-config": "./eslint-config/index.js",
+    "./eslint-config/*": "./eslint-config/*",
     "./onActivated": {
       "import": "./onActivated.mjs",
       "require": "./onActivated.cjs"
