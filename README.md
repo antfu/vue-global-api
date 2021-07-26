@@ -91,31 +91,32 @@ In [the latest `<script setup>`](https://github.com/vuejs/rfcs/pull/227), compil
 
 ## ESLint
 
-If you use ESLint it'll complain about you using undefined variables. This package provides a ESLint config you can extend from that will fix those issues.
+If you use ESLint it'll complain about you using undefined variables. This package provides the ESLint config presets to solve it.
 
-Just extend the config in your `.eslintrc.js`:
+Extend in your ESLint config:
 
 ```javascript
+// .eslintrc.js
 module.exports = {
   extends: [
-    'vue-global-api-main/eslint-config'
+    'vue-global-api/eslint-config'
   ]
 };
 ```
 
-This provides the same collections and single API options to allow you to have more fine-grain control.
+It also provides the same collections and single API options for fine-grain control.
 
 ```javascript
+// .eslintrc.js
 module.exports = {
   extends: [
-    // allow all reactivity apis (`ref`, `computed`, `watch`, etc.)
-    'vue-global-api-main/eslint-config/reactivity',
-    // allow register all lifecycle hooks (`onMounted`, `onUpdated`, `onUnmounted`, etc.)
-    'vue-global-api-main/eslint-config/lifecycle',
-    // allow register component apis (`inject`, `provide`, `h`, etc.)
-    'vue-global-api-main/eslint-config/component',
-    // allow singular api
-    'vue-global-api-main/eslint-config/defineProps',
+    // collections
+    'vue-global-api/eslint-config/reactivity',
+    'vue-global-api/eslint-config/lifecycle',
+    'vue-global-api/eslint-config/component',
+    // single apis
+    'vue-global-api/eslint-config/ref',
+    'vue-global-api/eslint-config/toRef',
   ]
 };
 ```
