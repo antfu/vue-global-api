@@ -19,7 +19,7 @@
   "scripts": {
     "build": "esno scripts/generate.ts",
     "prepublishOnly": "npm run build",
-    "clean": "rimraf *.cjs *.d.ts *.mjs",
+    "clean": "rimraf *.cjs *.d.ts *.mjs eslint-config",
     "release": "npx bumpp --commit --tag --push && npm publish"
   },
   "exports": {
