@@ -4,3 +4,4 @@ dist
 *.cjs
 *.mjs
 *.d.ts
+eslint-config
