@@ -19,9 +19,8 @@
   ],
   "scripts": {
     "build": "esno scripts/generate.ts",
-    "prepublishOnly": "npm run build",
     "clean": "rimraf *.cjs *.d.ts *.mjs eslint-config/*.js",
-    "release": "npx bumpp --commit --tag --push package.json eslint-config/package.json && pnpm -r publish"
+    "release": "npx bumpp --commit --tag --push package.json eslint-config/package.json && npm run build && pnpm -r publish"
   },
   "exports": {
     "./eslint-config": "./eslint-config/index.js",
