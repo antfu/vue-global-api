@@ -191,8 +191,8 @@
   "module": "./index.mjs",
   "types": "./index.d.ts",
   "dependencies": {
-    "vue-demi": "latest",
-    "eslint-config-vue-global-api": "workspace:*"
+    "eslint-config-vue-global-api": "workspace:*",
+    "vue-demi": "latest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.6.6",
