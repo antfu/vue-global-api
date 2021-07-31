@@ -99,7 +99,7 @@ Extend in your ESLint config:
 // .eslintrc.js
 module.exports = {
   extends: [
-    'vue-global-api/eslint-config'
+    'vue-global-api'
   ]
 };
 ```
@@ -111,12 +111,12 @@ It also provides the same collections and single API options for fine-grain cont
 module.exports = {
   extends: [
     // collections
-    'vue-global-api/eslint-config/reactivity',
-    'vue-global-api/eslint-config/lifecycle',
-    'vue-global-api/eslint-config/component',
+    'vue-global-api/reactivity',
+    'vue-global-api/lifecycle',
+    'vue-global-api/component',
     // single apis
-    'vue-global-api/eslint-config/ref',
-    'vue-global-api/eslint-config/toRef',
+    'vue-global-api/ref',
+    'vue-global-api/toRef',
   ]
 };
 ```
