@@ -54,6 +54,8 @@ import 'vue-global-api'
 
 And enjoy :)
 
+> Powered by [`vue-demi`](https://github.com/vueuse/vue-demi), this package also works for Vue 2.
+
 ## Customization
 
 By default, importing `vue-global-api` will register [all common composition apis](https://github.com/antfu/vue-global-api/blob/main/scripts/generate.ts) to the global object. If you want to have fine-grain control, use submodule per API:
