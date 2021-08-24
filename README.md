@@ -1,3 +1,7 @@
+## ✨ Try [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import), a compile time successor of this package. Providing a lot more flexibility and tree-shaking support!
+
+---
+
 # vue-global-api
 
 Use Vue Composition API globally
